@@ -1,10 +1,13 @@
+/*
+=====================================================
+PROGRAM: SceneDelegate.swift
+PROJECT: Lab 5
 //
-//  SceneDelegate.swift
-//  Lab 5
-//
-//  Created by Sheila Demonteverde on 12/8/20.
-//  Copyright © 2020 Sheila Demonteverde. All rights reserved.
-//
+// Created by Sheila Demonteverde on 12/8/20.
+// Dev notes updated: 05/12/2026
+// Copyright © 2020 Sheila Demonteverde. All rights reserved.
+=====================================================
+*/
 
 import UIKit
 
