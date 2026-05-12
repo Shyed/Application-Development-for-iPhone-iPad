@@ -1,11 +1,25 @@
-//
-//  AppDelegate.swift
-//  Lab 5
-//
-//  Created by Sheila Demonteverde on 12/8/20.
-//  Dev notes updated: 05/12/2026
-//  Copyright © 2020 Sheila Demonteverde. All rights reserved.
-//
+/*
+=====================================================
+ PROGRAM: AppDelegate.swift
+ PROJECT: Lab 5
+
+ DESCRIPTION:
+ This file manages the main application lifecycle
+ events for the iOS application.
+
+ FEATURES:
+ - Handles application startup
+ - Manages scene sessions
+ - Controls app lifecycle behavior
+
+ NOTES:
+ - Part of the default iOS UIKit app structure
+ - Uses SceneDelegate architecture introduced in iOS 13
+
+Author: Sheila Demonteverde | 12/08/2020
+Dev Notes Updated: 05/12/2026 - SD
+=====================================================
+*/
 
 import UIKit
 
