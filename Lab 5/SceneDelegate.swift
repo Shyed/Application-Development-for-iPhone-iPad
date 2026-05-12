@@ -1,56 +1,68 @@
 /*
 =====================================================
-PROGRAM: SceneDelegate.swift
-PROJECT: Lab 5
-//
-// Created by Sheila Demonteverde on 12/8/20.
-// Dev notes updated: 05/12/2026
-// Copyright © 2020 Sheila Demonteverde. All rights reserved.
+ PROGRAM: SceneDelegate.swift
+ PROJECT: Lab 5
+
+ DESCRIPTION:
+ This file manages the lifecycle events for
+ app scenes in an iOS application.
+
+ FEATURES:
+ - Handles scene connection and disconnection
+ - Manages foreground/background transitions
+ - Controls scene activity states
+
+ NOTES:
+ - Part of the UIKit SceneDelegate architecture
+ - Introduced in iOS 13 for multi-window support
+
+Author: Sheila Demonteverde | 12/8/2020
+Dev Notes Updated: 05/12/2026 - SD
 =====================================================
 */
 
 import UIKit
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+class SceneDelegate: UIResponder, UIWindowSceneDelegate 
+{
+    // Main application window
     var window: UIWindow?
 
-
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    /*-- CONNECT SCENE --*/
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) 
+    {
+        // Configure and attach UIWindow to UIWindowScene
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
-    func sceneDidDisconnect(_ scene: UIScene) {
-        // Called as the scene is being released by the system.
-        // This occurs shortly after the scene enters the background, or when its session is discarded.
-        // Release any resources associated with this scene that can be re-created the next time the scene connects.
-        // The scene may re-connect later, as its session was not neccessarily discarded (see `application:didDiscardSceneSessions` instead).
+    /*-- DISCONNECT SCENE --*/
+    func sceneDidDisconnect(_ scene: UIScene) 
+    {
+         // Release resources related to disconnected scene
     }
 
-    func sceneDidBecomeActive(_ scene: UIScene) {
-        // Called when the scene has moved from an inactive state to an active state.
-        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+     /*-- SCENE BECAME ACTIVE --*/
+    func sceneDidBecomeActive(_ scene: UIScene) 
+    {
+        // Restart paused tasks when scene becomes active
     }
 
-    func sceneWillResignActive(_ scene: UIScene) {
-        // Called when the scene will move from an active state to an inactive state.
-        // This may occur due to temporary interruptions (ex. an incoming phone call).
+    /*-- SCENE WILL RESIGN ACTIVE --*/
+    func sceneWillResignActive(_ scene: UIScene) 
+    {
+        // Pause tasks when app becomes inactive
     }
 
-    func sceneWillEnterForeground(_ scene: UIScene) {
-        // Called as the scene transitions from the background to the foreground.
-        // Use this method to undo the changes made on entering the background.
+    /*-- SCENE ENTER FOREGROUND --*/
+    func sceneWillEnterForeground(_ scene: UIScene) 
+    {
+        // Undo changes made when entering background
     }
-
-    func sceneDidEnterBackground(_ scene: UIScene) {
-        // Called as the scene transitions from the foreground to the background.
-        // Use this method to save data, release shared resources, and store enough scene-specific state information
-        // to restore the scene back to its current state.
+    
+    /*-- SCENE ENTER BACKGROUND --*/
+    func sceneDidEnterBackground(_ scene: UIScene) 
+    {
+        // Save app data and release shared resources
     }
-
-
 }
 
